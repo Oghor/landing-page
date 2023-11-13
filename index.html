@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobileStyle.css">
+</head>
+<body>
+  <nav>
+    <a class="logo" href="/">
+      <img src="./images/logo.svg" alt="logo">
+    </a>   
+    <button class="hamburger">
+      <img src="./images/icon-menu.svg" alt="menu" id="mobile-menu-button">
+    </button>
+    <div class="menu">
+    <div class="desktop-nav">
+      <span class="group">
+        <button 
+          class="nav-item dropdown" 
+          id="features" 
+          data-dropdown="features-dropdown" 
+          aria-expanded="false">
+            Features
+            <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="dropdown-icon">
+        </button>           
+        <div id="features-dropdown" class="dropdown-menu hidden">
+          <ul>
+            <li>
+              <img src="./images/icon-todo.svg" alt="icon-todo">
+              <span>Todo List</span>
+            </li>
+            <li>
+              <img src="./images/icon-calendar.svg" alt="icon-calendar">
+              <span>Calender</span>
+            </li>
+            <li>
+              <img src="./images/icon-reminders.svg" alt="icon-todo">
+              <span>Reminders</span>
+            </li>
+            
+            <li>
+              <img src="./images/icon-planning.svg" alt="icon-todo">
+              <span>Planning</span>
+            </li>
+          </ul>
+        </div>
+      </span>
+      <span class="group">
+        <button 
+          class="nav-item dropdown" 
+          id="company"
+          data-dropdown="company-dropdown" 
+          aria-expanded="false">
+            Company
+            <img src="./images/icon-arrow-down.svg" alt="icon-arrow-down" class="dropdown-icon">
+        </button>        
+        <div id="company-dropdown" class="dropdown-menu hidden">
+          <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+      </span>
+      <span class="nav-item">Careers</span>
+      <span class="nav-item">About</span>
+    </div>
+    <div class="nav-login">
+      <span class="nav-item">Login</span>
+      <span class="nav-item" id="register">Register</span>
+    </div> 
+  </div>  
+  </nav>   
+  <div class="body">
+      <section class="body-text">
+        <h1>Make<br> remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button id="learn-more">Learn more</button>
+
+        <div class="client-imgs">
+          <img src="./images/client-databiz.svg" alt="databiz">
+          <img src="./images/client-audiophile.svg" alt="audiophile">
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
+        </div>
+      </section>
+      <section class="body-img">
+        <img src="./images/image-hero-desktop.png" alt="image-desktop" id="desktop-img">
+        <img src="./images/image-hero-mobile.png" alt="image-mobile" id="mobile-img">
+      </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Oghor</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
